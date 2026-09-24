@@ -1,0 +1,40 @@
+print("===== MOVIE TICKET BOOKING SYSTEM =====")
+
+name = input("Enter customer name: ")
+
+print("\nAvailable Movies")
+print("1. Leo - ₹200")
+print("2. Pushpa - ₹180")
+print("3. Interstellar - ₹250")
+
+choice = input("Select movie (1/2/3): ")
+
+if choice == "1":
+    movie = "Leo"
+    price = 200
+
+elif choice == "2":
+    movie = "Pushpa"
+    price = 180
+
+elif choice == "3":
+    movie = "Interstellar"
+    price = 250
+
+else:
+    print("Invalid movie selection.")
+    exit()
+
+tickets = int(input("Enter number of tickets: "))
+
+total = price * tickets
+
+print("\n===== BOOKING DETAILS =====")
+print("Customer Name:", name)
+print("Movie:", movie)
+print("Tickets:", tickets)
+print("Ticket Price: ₹", price)
+print("Total Amount: ₹", total)
+
+print("\nMovie tickets booked successfully! ✅")
+print("Enjoy the movie!")
